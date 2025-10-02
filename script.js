@@ -19,6 +19,7 @@ const getSum = () => {
   // Make cell span across 2 columns
   totalCell.setAttribute("colspan", "2");
   totalCell.style.fontWeight = "bold";
+ totalCell.id = "ans"; // <-- important for Cypress test
   totalCell.textContent = `Total Price = Rs ${total}`;
 
   newRow.appendChild(totalCell);
